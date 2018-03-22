@@ -12,13 +12,17 @@
     <div class="container-fluid">
       <h1>Who is your celebrity partner?</h1>
       <form id="celeb-quiz" action="index.html" method="post">
-        <div class="form-control">
+        <div class="form-control-2 form-group has-error has-feedback">
           <label>What gender are you interested in?</label>
-          <input id="gender" class="form-control" type="text" name="" value="" placeholder="male or female">
+          <input id="gender" class="form-control" type="text" name="" value="" placeholder="male or female" aria-describedby="inputError2Status">
+        </div>
+        <div class="form-group has-error">
+          <label class="control-label" for="inputError1">Input with error</label>
+          <input type="text" class="form-control" id="inputError1">
         </div>
         <div class="form-control">
           <label>What personality do you look for in a date?</label>
-          <select class="form-control" name="">
+          <select class="form-control" id="personality">
             <option value="1">outgoing</option>
             <option value="2">intelligent</option>
             <option value="3">street smart</option>
@@ -49,15 +53,32 @@
         </div>
         <div class="form-control">
           <label>What is your spirit animal?</label>
-          <select class="form-control" name="">
-            <option value="1">outgoing</option>
-            <option value="2">intelligent</option>
-            <option value="3">street smart</option>
-            <option value="4">thoughtful</option>
-            <option value="5">funny</option>
+          <select class="form-control" id="animal">
+            <option value="1">lion</option>
+            <option value="2">sloth</option>
+            <option value="3">emu</option>
+            <option value="4">hummingbird</option>
+            <option value="5">panther</option>
           </select>
         </div>
+        <button class="btn btn-danger form-control" type="submit" name="button">Submit</button>
       </form>
+      <div class="male-celeb1 celeb">
+        <img src="img/pitt.jpg" alt="">
+        <h4>You got Brad Pitt!</h4>
+      </div>
+      <div class="male-celeb2 celeb">
+        <img src="img/leo.gif" alt="">
+        <h4>You got Leonardo DiCaprio!</h4>
+      </div>
+      <div class="female-celeb1 celeb">
+        <img src="img/scarlett.jpg" alt="">
+        <h4>You got Scarlett Johanssen!</h4>
+      </div>
+      <div class="female-celeb2 celeb">
+        <img src="img/jen.jpg" alt="">
+        <h4>You got Jennifer Aniston!</h4>
+      </div>
     </div>
   </body>
 </html>
