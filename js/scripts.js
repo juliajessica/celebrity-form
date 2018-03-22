@@ -11,7 +11,6 @@ $(function() {
 
     if (!gender || (gender !== 'male' || gender !== 'female')) {
       console.log(gender);
-      alert('hi');
       // $('.form-control').addClass('form-group has-error has-feedback');
       $('input#gender').css('border', '2px red solid');
     }
